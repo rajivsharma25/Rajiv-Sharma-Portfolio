@@ -26,11 +26,14 @@
       class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50"
     >
       <!-- logo -->
-      <img
-        src="./images/logo (2).png"
-        alt="logo"
-        class="w-28 cursor-pointer mr-14"
-      />
+      
+        <img
+          src="./images/logo (2).png"
+          alt="logo"
+          class="w-28 cursor-pointer mr-14"
+        />
+      
+
       <!-- menu -->
       <ul
         class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50"
@@ -77,25 +80,116 @@
 
     <!-- header -->
     <div
-      class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col justify-center items-center gap-4"
+      class="relative w-11/12 max-w-screen-xl text-center mx-auto h-screen flex flex-col justify-center items-center gap-4 overflow-hidden"
     >
-      <img class="rounded-full w-36 mt-8" src="./images/profile.jpg" alt="" />
-      <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3">
-        Hi! I'm Rajiv Sharma <img src="./images/hand-icon.png" class="w-6
-        animate-wave origin-[70%_70%]"" alt="">
+      <!-- Animated Background Elements -->
+      <div class="absolute inset-0 pointer-events-none">
+        <!-- Floating geometric shapes -->
+        <div
+          class="absolute top-20 left-10 w-4 h-4 bg-gradient-to-r from-[#b820e6] to-[#da7d20] rounded-full animate-bounce-slow opacity-60"
+        ></div>
+        <div
+          class="absolute top-32 right-16 w-6 h-6 border-2 border-purple-400 rotate-45 animate-spin-slow opacity-50"
+        ></div>
+        <div
+          class="absolute bottom-40 left-20 w-8 h-8 bg-gradient-to-r from-[#da7d20] to-[#b820e6] transform rotate-45 animate-pulse opacity-40"
+        ></div>
+        <div
+          class="absolute top-1/3 right-12 w-3 h-3 bg-blue-400 rounded-full animate-ping opacity-30"
+        ></div>
+        <div
+          class="absolute bottom-1/3 left-8 w-5 h-5 border-2 border-orange-400 rounded-full animate-bounce opacity-40"
+        ></div>
+
+        <!-- Floating code symbols -->
+        <div
+          class="absolute top-24 right-1/4 text-2xl text-purple-400 animate-float opacity-30 font-mono"
+        >
+          &lt;/&gt;
+        </div>
+        <div
+          class="absolute bottom-48 left-1/4 text-xl text-orange-400 animate-float-delayed opacity-30 font-mono"
+        >
+          {}
+        </div>
+        <div
+          class="absolute top-1/2 left-4 text-lg text-blue-400 animate-bounce-slow opacity-30 font-mono"
+        >
+          ( )
+        </div>
+        <div
+          class="absolute top-40 right-8 text-xl text-green-400 animate-pulse opacity-30 font-mono"
+        >
+          [ ]
+        </div>
+
+        <!-- Gradient orbs -->
+        <div
+          class="absolute top-16 left-1/3 w-20 h-20 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full blur-xl animate-pulse opacity-20"
+        ></div>
+        <div
+          class="absolute bottom-20 right-1/3 w-24 h-24 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-full blur-xl animate-pulse-delayed opacity-15"
+        ></div>
+
+        <!-- Tech stack icons floating -->
+        <div
+          class="absolute top-28 left-1/2 transform -translate-x-1/2 text-sm text-gray-400 animate-float opacity-40"
+        >
+          ReactJS
+        </div>
+        <div
+          class="absolute bottom-32 right-1/4 text-sm text-gray-400 animate-float-delayed opacity-40"
+        >
+          JS
+        </div>
+        <div
+          class="absolute top-3/4 left-16 text-sm text-gray-400 animate-bounce-slow opacity-40"
+        >
+          CSS
+        </div>
+        <div
+          class="absolute top-1/4 right-20 text-sm text-gray-400 animate-pulse opacity-40"
+        >
+          HTML
+        </div>
+      </div>
+
+      <!-- Original content with enhanced animations -->
+      <img
+        class="rounded-full w-36 mt-8 bg-blue-100 shadow-inner p-1.5 z-10"
+        src="./images/profile.jpg"
+        alt=""
+      />
+
+      <h3
+        class="flex items-center gap-2 text-xl md:text-2xl mb-3 animate-fade-in-up animation-delay-200"
+      >
+        Hi! I'm Rajiv Sharma
+        <img
+          src="./images/hand-icon.png"
+          class="w-6 animate-wave origin-[70%_70%]"
+          alt=""
+        />
       </h3>
-      <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">
+
+      <h1
+        class="text-4xl sm:text-6xl lg:text-[66px] font-Ovo animate-fade-in-up animation-delay-400 bg-gradient-to-r from-[#b820e6] to-[#da7d20] bg-clip-text text-transparent"
+      >
         frontend web developer
       </h1>
-      <p class="max-w-2xl mx-auto">
+
+      <p class="max-w-2xl mx-auto animate-fade-in-up animation-delay-600">
         I am a passionate and detail-oriented Frontend Developer, a fresher in
         my career, skilled in HTML, CSS, JavaScript, and ReactJS, eager to build
         modern web interfaces.
       </p>
-      <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+
+      <div
+        class="flex flex-col sm:flex-row items-center gap-4 mt-4 animate-fade-in-up animation-delay-800"
+      >
         <a
           href="#contact"
-          class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2"
+          class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 hover:scale-105 transition-transform duration-300 hover:shadow-lg hover:shadow-purple-500/25"
           >contact me
           <img src="./images/right-arrow-white.png" class="w-4" alt=""
         /></a>
@@ -103,11 +197,12 @@
         <a
           href="./images/Rajiv-Sharma-Resume.pdf"
           download
-          class="px-10 py-3 border rounded-full border-gray-500 bg-white flex items-center gap-2"
+          class="px-10 py-3 border rounded-full border-gray-500 bg-white flex items-center gap-2 hover:scale-105 transition-transform duration-300 hover:shadow-lg"
           >my resume <img src="./images/download-icon.png" class="w-4" alt=""
         /></a>
       </div>
-      <div class="mt-5">
+
+      <div class="mt-5 animate-fade-in-up animation-delay-1000">
         <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
           <li>
             <a
@@ -138,14 +233,16 @@
     </div>
 
     <!-- about me -->
-    <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+    <div id="about" class="w-full px-[6%] sm:px-[12%] py-10 scroll-mt-20">
       <h4 class="text-center mb-2 text-lg">Introduction</h4>
       <h2 class="text-center text-5xl font-Ovo">About me</h2>
-      <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+      <div
+        class="flex w-full flex-col lg:flex-row items-center gap-20 mt-10 mb-14"
+      >
         <div class="max-w-max mx-auto relative">
           <img
             src="./images/profile2.jpg"
-            class="w-64 sm:w-80 rounded-3xl mx-w-none"
+            class="w-72 sm:w-80 rounded-3xl mx-w-none p-1.5 bg-blue-100 shadow-inner"
             alt=""
           />
 
@@ -278,7 +375,7 @@
       </div>
     </div>
 
-    <div class="w-full px-[12%] pb-6">
+    <div class="w-full px-[6%] sm:px-[12%] pb-6">
       <div
         class="border-2 border-gray-100 flex md:flex-row flex-col justify-center items-center gap-10 py-2 rounded-[20px] pt-10 bg-[url('/images/pastel-pink-bokeh-lights.jpg')] bg-no-repeat bg-cover bg-center"
       >
@@ -295,94 +392,1322 @@
     </div>
 
     <!-- experience -->
-    <div id="experience" class="w-full px-[12%] py-10 scroll-mt-20">
-      <h4 class="text-center mb-2 text-lg">Experience</h4>
-      <h2 class="text-center text-5xl font-Ovo">My Work Experience</h2>
-      <p class="md:text-center text-justify max-w-2xl mx-auto mt-5 mb-12">
-        Explore my journey as a web developer through hands-on industry
-        experience. From internships to real-world projects, each role has
-        sharpened my skills in front-end and full-stack development,
-        collaboration, and problem-solving. Dive in to see how I’ve contributed
-        to impactful teams and grown as a tech professional.
-      </p>
-      <div class="grid grid-cols-auto my-10 gap-5">
+    <section
+      id="experience"
+      class="w-full px-[6%] sm:px-[12%] py-16 scroll-mt-16"
+    >
+      <!-- Header Section -->
+      <div class="text-center mb-8">
+        <h4 class="text-center mb-2 text-lg">Experience Journey</h4>
+        <h2 class="text-center text-5xl font-Ovo">My Work Experience</h2>
+        <p class="md:text-center text-justify max-w-2xl mx-auto mt-5">
+          Explore my journey as a web developer through hands-on industry
+          experience. From internships to real-world projects, each role has
+          sharpened my skills in front-end and full-stack development.
+        </p>
+      </div>
+
+      <!-- Experience Cards Grid -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch"
+      >
+        <!-- Bodmas Education Card -->
         <div
-          class="aspect-square bg-[url('./images/cognifyz_techonologies_logo.jpg')] bg-no-repeat bg-center rounded-lg border border-gray-400 relative cursor-pointer group"
+          class="experience-card group relative bg-white/80 backdrop-blur-sm border border-gray-200/50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden h-full flex flex-col"
         >
-          <a
-            href="https://www.linkedin.com/posts/rajivsharma25_internship-certification-activity-7308207301285318656-RkGk?utm_source=share&utm_medium=member_desktop&rcm=ACoAACrYqosBhOvH7AuqcV69McfqCm4_TJHfxy0/"
-            target="_blank"
+          <!-- Decorative gradient overlay -->
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-violet-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          ></div>
+
+          <!-- Company Image with enhanced styling -->
+          <div
+            class="relative h-48 bg-gradient-to-br from-gray-50 via-white to-gray-100 flex items-center justify-center overflow-hidden flex-shrink-0 group/image"
           >
+            <!-- Multi-layered background gradients -->
             <div
-              class="h-20 bg-white w-10/12 rounded-md border-2 border-gray-200 absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7 hover:-translate-y-1 hover:bg-green-200 hover:shadow-black"
-            >
-              <div>
-                <h2 class="font-semibold font-Ovo">Internship</h2>
-                <p class="text-sm text-gray-700">Web Development Intern</p>
-              </div>
-              <img src="./images/send-icon.png" class="w-5" alt="" />
+              class="absolute inset-0 bg-gradient-to-br from-transparent via-violet-50/30 to-purple-50/20"
+            ></div>
+            <div
+              class="absolute inset-0 bg-gradient-to-tl from-transparent to-violet-100/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+            ></div>
+
+            <!-- Animated background pattern -->
+            <div class="absolute inset-0 opacity-30">
+              <div
+                class="absolute top-4 left-4 w-2 h-2 bg-violet-300 rounded-full animate-pulse"
+              ></div>
+              <div
+                class="absolute top-8 right-8 w-1.5 h-1.5 bg-purple-300 rounded-full animate-pulse"
+                style="animation-delay: 0.5s"
+              ></div>
+              <div
+                class="absolute bottom-6 left-8 w-1 h-1 bg-violet-400 rounded-full animate-pulse"
+                style="animation-delay: 1s"
+              ></div>
             </div>
-          </a>
+
+            <!-- Main image container with enhanced effects -->
+            <div
+              class="w-full h-full flex items-center justify-center relative z-10"
+            >
+              <!-- Image glow effect -->
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-violet-200/20 via-purple-200/20 to-violet-200/20 rounded-full blur-xl scale-110 opacity-0 group-hover/image:opacity-100 transition-all duration-500"
+              ></div>
+
+              <!-- Image with enhanced styling -->
+              <img
+                src="./images/bodmas.jpg"
+                alt="Bodmas Education Services Logo"
+                class="relative w-36 h-36 z-20 object-contain rounded-full shadow-lg group-hover/image:shadow-2xl group-hover/image:scale-105 transition-all duration-500 ring-2 ring-white/50 group-hover/image:ring-violet-200/50"
+              />
+
+              <!-- Floating elements around image -->
+              <div
+                class="absolute top-1/2 left-1/4 w-1 h-1 bg-violet-400 rounded-full opacity-60 group-hover/image:animate-bounce"
+                style="animation-delay: 0.2s"
+              ></div>
+              <div
+                class="absolute top-1/3 right-1/4 w-1.5 h-1.5 bg-purple-400 rounded-full opacity-60 group-hover/image:animate-bounce"
+                style="animation-delay: 0.8s"
+              ></div>
+            </div>
+
+            <!-- Enhanced corner accents -->
+            <div class="absolute top-4 right-4 flex space-x-1">
+              <div
+                class="w-2 h-2 bg-violet-500 rounded-full opacity-60 group-hover/image:animate-pulse"
+              ></div>
+              <div
+                class="w-1.5 h-1.5 bg-purple-500 rounded-full opacity-40 group-hover/image:animate-pulse"
+                style="animation-delay: 0.3s"
+              ></div>
+            </div>
+
+            <!-- Bottom left accent with gradient -->
+            <div
+              class="absolute bottom-4 left-4 w-8 h-1 bg-gradient-to-r from-violet-400 to-purple-400 rounded-full opacity-50 group-hover/image:opacity-80 transition-opacity duration-300"
+            ></div>
+
+            <!-- Animated border shimmer effect on hover -->
+            <div
+              class="absolute inset-0 rounded-2xl opacity-0 group-hover/image:opacity-100 transition-opacity duration-500"
+            >
+              <div
+                class="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-violet-200/30 to-transparent animate-shimmer"
+              ></div>
+            </div>
+          </div>
+
+          <div class="relative p-6 space-y-4 flex-grow flex flex-col">
+            <!-- Badge and Timeline with enhanced styling -->
+            <div class="flex items-center justify-between">
+              <span
+                class="px-3 py-1.5 bg-gradient-to-r from-violet-500 to-violet-600 text-white text-xs font-semibold rounded-full shadow-sm"
+              >
+                Internship
+              </span>
+              <div
+                class="flex items-center text-xs text-gray-500 bg-gray-50 px-3 py-1 rounded-full"
+              >
+                <svg
+                  class="w-3 h-3 mr-1.5 text-gray-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  ></path>
+                </svg>
+                <span class="font-medium">May 2025 - Present</span>
+              </div>
+            </div>
+
+            <!-- Role Title with gradient text -->
+            <h3
+              class="font-Ovo text-xl font-bold text-gray-900 leading-tight group-hover:text-violet-700 transition-colors duration-300"
+            >
+              ReactJS Developer Intern
+            </h3>
+
+            <!-- Enhanced Company Info -->
+            <div
+              class="bg-gradient-to-r from-gray-50 to-gray-100/50 rounded-xl p-4 border border-gray-100"
+            >
+              <div class="space-y-2">
+                <div class="flex items-center">
+                  <div class="p-1.5 bg-violet-100 rounded-lg mr-3">
+                    <svg
+                      class="w-3.5 h-3.5 text-violet-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-6m-2 0H5m0 0H3m2 0v-3a2 2 0 012-2h6a2 2 0 012 2v3"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="text-sm font-bold text-gray-800">
+                    Bodmas Education Services
+                  </span>
+                </div>
+                <div class="flex items-center">
+                  <div class="p-1.5 bg-green-100 rounded-lg mr-3">
+                    <svg
+                      class="w-3.5 h-3.5 text-green-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      ></path>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="text-sm text-gray-600 font-medium">
+                    Noida, Uttar Pradesh, India
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Enhanced Description with flex-grow to take available space -->
+            <div class="flex-grow">
+              <p class="text-gray-600 text-sm leading-relaxed font-medium mb-4">
+                Developed interactive React components and implemented modern
+                frontend solutions with focus on user experience and performance
+                optimization. Working with modern JavaScript frameworks and
+                responsive design principles.
+              </p>
+
+              <!-- Skills Tags -->
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-2 py-1 bg-violet-100 text-violet-700 text-xs font-medium rounded-md"
+                  >ReactJS</span
+                >
+                <span
+                  class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-md"
+                  >JavaScript</span
+                >
+                <span
+                  class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-md"
+                  >Tailwind CSS</span
+                >
+                <span
+                  class="px-2 py-1 bg-yellow-100 text-yellow-700 text-xs font-medium rounded-md"
+                  >Redux</span
+                >
+                <span
+                  class="px-2 py-1 bg-purple-100 text-purple-700 text-xs font-medium rounded-md"
+                  >Context API</span
+                >
+                <span
+                  class="px-2 py-1 bg-orange-100 text-orange-700 text-xs font-medium rounded-md"
+                  >HTML</span
+                >
+                <span
+                  class="px-2 py-1 bg-pink-100 text-pink-700 text-xs font-medium rounded-md"
+                  >CSS</span
+                >
+                <span
+                  class="px-2 py-1 bg-indigo-100 text-indigo-700 text-xs font-medium rounded-md"
+                  >API Integration</span
+                >
+              </div>
+            </div>
+
+            <!-- Enhanced Action Button - Fixed at bottom -->
+            <div class="mt-auto pt-4">
+              <a
+                href="https://www.linkedin.com/in/rajivsharma25/details/experience/"
+                target="_blank"
+                class="group/btn inline-flex items-center justify-center w-full px-6 py-3 bg-gradient-to-r from-violet-600 via-purple-600 to-violet-700 text-white text-sm font-semibold rounded-xl hover:from-violet-700 hover:via-purple-700 hover:to-violet-800 transition-all duration-300 focus:outline-none shadow-lg hover:shadow-xl"
+              >
+                <span>View Details</span>
+                <svg
+                  class="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Decorative elements -->
+          <div
+            class="absolute top-0 left-0 w-20 h-20 bg-gradient-to-br from-violet-500/10 to-transparent rounded-br-full"
+          ></div>
+          <div
+            class="absolute bottom-0 right-0 w-16 h-16 bg-gradient-to-tl from-purple-500/10 to-transparent rounded-tl-full"
+          ></div>
         </div>
+
+        <!-- Cognifyz Technologies Card -->
         <div
-          class="aspect-square bg-[url('./images/tata_strive_logo.jpg')] bg-no-repeat bg-cover bg-center rounded-lg border border-gray-400 relative cursor-pointer group"
+          class="experience-card group relative bg-white/80 backdrop-blur-sm border border-gray-200/50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden h-full flex flex-col"
         >
-          <a
-            href="https://www.credly.com/badges/be66bf69-1877-4ab3-88e9-aa85f0dd88e7/linked_in_profile"
-            target="_blank"
+          <!-- Decorative gradient overlay -->
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          ></div>
+
+          <!-- Company Image with enhanced styling -->
+          <div
+            class="relative h-48 bg-gradient-to-br from-gray-50 via-white to-gray-100 flex items-center justify-center overflow-hidden flex-shrink-0 group/image"
           >
+            <!-- Multi-layered background gradients -->
             <div
-              class="h-20 bg-white w-10/12 rounded-md border-2 border-gray-200 absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7 hover:-translate-y-1 hover:bg-green-200 hover:shadow-black"
-            >
-              <div>
-                <h2 class="font-semibold font-Ovo">Training</h2>
-                <p class="text-sm text-gray-700">AWS Cloud Practitioner</p>
-              </div>
-              <img src="./images/send-icon.png" class="w-5" alt="" />
+              class="absolute inset-0 bg-gradient-to-br from-transparent via-blue-50/30 to-cyan-50/20"
+            ></div>
+            <div
+              class="absolute inset-0 bg-gradient-to-tl from-transparent to-blue-100/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+            ></div>
+
+            <!-- Animated background pattern -->
+            <div class="absolute inset-0 opacity-30">
+              <div
+                class="absolute top-4 left-4 w-2 h-2 bg-blue-300 rounded-full animate-pulse"
+              ></div>
+              <div
+                class="absolute top-8 right-8 w-1.5 h-1.5 bg-cyan-300 rounded-full animate-pulse"
+                style="animation-delay: 0.5s"
+              ></div>
+              <div
+                class="absolute bottom-6 left-8 w-1 h-1 bg-blue-400 rounded-full animate-pulse"
+                style="animation-delay: 1s"
+              ></div>
             </div>
-          </a>
+
+            <!-- Main image container with enhanced effects -->
+            <div
+              class="w-full h-full flex items-center justify-center relative z-10"
+            >
+              <!-- Image glow effect -->
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-blue-200/20 via-cyan-200/20 to-blue-200/20 rounded-full blur-xl scale-110 opacity-0 group-hover/image:opacity-100 transition-all duration-500"
+              ></div>
+
+              <!-- Image with enhanced styling -->
+              <img
+                src="./images/cognifyz_techonologies_logo.jpg"
+                alt="Cognifyz Technologies Logo"
+                class="relative z-20 w-36 h-36 object-contain rounded-full shadow-lg group-hover/image:shadow-2xl group-hover/image:scale-105 transition-all duration-500 ring-2 ring-white/50 group-hover/image:ring-blue-200/50"
+              />
+
+              <!-- Floating elements around image -->
+              <div
+                class="absolute top-1/2 left-1/4 w-1 h-1 bg-blue-400 rounded-full opacity-60 group-hover/image:animate-bounce"
+                style="animation-delay: 0.2s"
+              ></div>
+              <div
+                class="absolute top-1/3 right-1/4 w-1.5 h-1.5 bg-cyan-400 rounded-full opacity-60 group-hover/image:animate-bounce"
+                style="animation-delay: 0.8s"
+              ></div>
+            </div>
+
+            <!-- Enhanced corner accents -->
+            <div class="absolute top-4 right-4 flex space-x-1">
+              <div
+                class="w-2 h-2 bg-blue-500 rounded-full opacity-60 group-hover/image:animate-pulse"
+              ></div>
+              <div
+                class="w-1.5 h-1.5 bg-cyan-500 rounded-full opacity-40 group-hover/image:animate-pulse"
+                style="animation-delay: 0.3s"
+              ></div>
+            </div>
+
+            <!-- Bottom left accent with gradient -->
+            <div
+              class="absolute bottom-4 left-4 w-8 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full opacity-50 group-hover/image:opacity-80 transition-opacity duration-300"
+            ></div>
+
+            <!-- Animated border shimmer effect on hover -->
+            <div
+              class="absolute inset-0 rounded-2xl opacity-0 group-hover/image:opacity-100 transition-opacity duration-500"
+            >
+              <div
+                class="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-blue-200/30 to-transparent animate-shimmer"
+              ></div>
+            </div>
+          </div>
+
+          <div class="relative p-6 space-y-4 flex-grow flex flex-col">
+            <!-- Badge and Timeline with enhanced styling -->
+            <div class="flex items-center justify-between">
+              <span
+                class="px-3 py-1.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white text-xs font-semibold rounded-full shadow-sm"
+              >
+                Internship
+              </span>
+              <div
+                class="flex items-center text-xs text-gray-500 bg-gray-50 px-3 py-1 rounded-full"
+              >
+                <svg
+                  class="w-3 h-3 mr-1.5 text-gray-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  ></path>
+                </svg>
+                <span class="font-medium">Feb 2025 - Mar 2025</span>
+              </div>
+            </div>
+
+            <!-- Role Title with gradient text -->
+            <h3
+              class="font-Ovo text-xl font-bold text-gray-900 leading-tight group-hover:text-blue-700 transition-colors duration-300"
+            >
+              Web Development Intern
+            </h3>
+
+            <!-- Enhanced Company Info -->
+            <div
+              class="bg-gradient-to-r from-gray-50 to-gray-100/50 rounded-xl p-4 border border-gray-100"
+            >
+              <div class="space-y-2">
+                <div class="flex items-center">
+                  <div class="p-1.5 bg-blue-100 rounded-lg mr-3">
+                    <svg
+                      class="w-3.5 h-3.5 text-blue-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-6m-2 0H5m0 0H3m2 0v-3a2 2 0 012-2h6a2 2 0 012 2v3"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="text-sm font-bold text-gray-800">
+                    Cognifyz Technologies
+                  </span>
+                </div>
+                <div class="flex items-center">
+                  <div class="p-1.5 bg-green-100 rounded-lg mr-3">
+                    <svg
+                      class="w-3.5 h-3.5 text-green-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      ></path>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="text-sm text-gray-600 font-medium">
+                    Remote, India
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Enhanced Description with flex-grow to take available space -->
+            <div class="flex-grow">
+              <p class="text-gray-600 text-sm leading-relaxed font-medium mb-4">
+                Built responsive web applications using modern frameworks,
+                collaborated with cross-functional teams, and delivered
+                high-quality frontend solutions with focus on user interface
+                design.
+              </p>
+
+              <!-- Skills Tags -->
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-md"
+                  >HTML</span
+                >
+                <span
+                  class="px-2 py-1 bg-cyan-100 text-cyan-700 text-xs font-medium rounded-md"
+                  >Responsive</span
+                >
+                <span
+                  class="px-2 py-1 bg-indigo-100 text-indigo-700 text-xs font-medium rounded-md"
+                  >CSS</span
+                >
+                <span
+                  class="px-2 py-1 bg-yellow-100 text-yellow-700 text-xs font-medium rounded-md"
+                  >JavaScript</span
+                >
+                <span
+                  class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-md"
+                  >ReactJS</span
+                >
+                <span
+                  class="px-2 py-1 bg-purple-100 text-purple-700 text-xs font-medium rounded-md"
+                  >Tailwind CSS</span
+                >
+                <span
+                  class="px-2 py-1 bg-orange-100 text-orange-700 text-xs font-medium rounded-md"
+                  >API Integration</span
+                >
+              </div>
+            </div>
+
+            <!-- Enhanced Action Button - Fixed at bottom -->
+            <div class="mt-auto pt-4">
+              <a
+                href="https://www.linkedin.com/posts/rajivsharma25_internship-certification-activity-7308207301285318656-RkGk?utm_source=share&utm_medium=member_desktop&rcm=ACoAACrYqosBhOvH7AuqcV69McfqCm4_TJHfxy0/"
+                target="_blank"
+                class="group/btn inline-flex items-center justify-center w-full px-6 py-3 bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 text-white text-sm font-semibold rounded-xl hover:from-blue-700 hover:via-cyan-700 hover:to-blue-800 transition-all duration-300 focus:outline-none shadow-lg hover:shadow-xl"
+              >
+                <span>View Details</span>
+                <svg
+                  class="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Decorative elements -->
+          <div
+            class="absolute top-0 left-0 w-20 h-20 bg-gradient-to-br from-blue-500/10 to-transparent rounded-br-full"
+          ></div>
+          <div
+            class="absolute bottom-0 right-0 w-16 h-16 bg-gradient-to-tl from-cyan-500/10 to-transparent rounded-tl-full"
+          ></div>
         </div>
+
+        <!-- Tata Strive Card -->
         <div
-          class="aspect-square bg-[url('./images/cetpainfotech_logo.jpg')] bg-no-repeat bg-center rounded-lg border border-gray-400 relative cursor-pointer group"
+          class="experience-card group relative bg-white/80 backdrop-blur-sm border border-gray-200/50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden h-full flex flex-col"
         >
-          <a
-            href="https://www.linkedin.com/posts/rajivsharma25_mernstack-internshipcomplete-fullstackdeveloper-activity-7121792727544950785-y6Mf?utm_source=share&utm_medium=member_desktop&rcm=ACoAACrYqosBhOvH7AuqcV69McfqCm4_TJHfxy0"
-            target="_blank"
+          <!-- Decorative gradient overlay -->
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          ></div>
+
+          <!-- Company Image with enhanced styling -->
+          <div
+            class="relative h-48 bg-gradient-to-br from-gray-50 via-white to-gray-100 flex items-center justify-center overflow-hidden flex-shrink-0 group/image"
           >
+            <!-- Multi-layered background gradients -->
             <div
-              class="h-20 bg-white w-10/12 rounded-md border-2 border-gray-200 absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7 hover:-translate-y-1 hover:bg-green-200 hover:shadow-black"
-            >
-              <div>
-                <h2 class="font-semibold font-Ovo">Internship</h2>
-                <p class="text-sm text-gray-700">Web Developer Intern</p>
-              </div>
-              <img src="./images/send-icon.png" class="w-5" alt="" />
+              class="absolute inset-0 bg-gradient-to-br from-transparent via-purple-50/30 to-violet-50/20"
+            ></div>
+            <div
+              class="absolute inset-0 bg-gradient-to-tl from-transparent to-purple-100/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+            ></div>
+
+            <!-- Animated background pattern -->
+            <div class="absolute inset-0 opacity-30">
+              <div
+                class="absolute top-4 left-4 w-2 h-2 bg-purple-300 rounded-full animate-pulse"
+              ></div>
+              <div
+                class="absolute top-8 right-8 w-1.5 h-1.5 bg-violet-300 rounded-full animate-pulse"
+                style="animation-delay: 0.5s"
+              ></div>
+              <div
+                class="absolute bottom-6 left-8 w-1 h-1 bg-purple-400 rounded-full animate-pulse"
+                style="animation-delay: 1s"
+              ></div>
             </div>
-          </a>
+
+            <!-- Main image container with enhanced effects -->
+            <div
+              class="w-full h-full flex items-center justify-center relative z-10"
+            >
+              <!-- Image glow effect -->
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-purple-200/20 via-violet-200/20 to-purple-200/20 rounded-full blur-xl scale-110 opacity-0 group-hover/image:opacity-100 transition-all duration-500"
+              ></div>
+
+              <!-- Image with enhanced styling -->
+              <img
+                src="./images/tata_strive_logo.jpg"
+                alt="Tata Strive Logo"
+                class="relative w-36 h-36 z-20 object-contain rounded-full shadow-lg group-hover/image:shadow-2xl group-hover/image:scale-105 transition-all duration-500 ring-2 ring-white/50 group-hover/image:ring-purple-200/50"
+              />
+
+              <!-- Floating elements around image -->
+              <div
+                class="absolute top-1/2 left-1/4 w-1 h-1 bg-purple-400 rounded-full opacity-60 group-hover/image:animate-bounce"
+                style="animation-delay: 0.2s"
+              ></div>
+              <div
+                class="absolute top-1/3 right-1/4 w-1.5 h-1.5 bg-violet-400 rounded-full opacity-60 group-hover/image:animate-bounce"
+                style="animation-delay: 0.8s"
+              ></div>
+            </div>
+
+            <!-- Enhanced corner accents -->
+            <div class="absolute top-4 right-4 flex space-x-1">
+              <div
+                class="w-2 h-2 bg-purple-500 rounded-full opacity-60 group-hover/image:animate-pulse"
+              ></div>
+              <div
+                class="w-1.5 h-1.5 bg-violet-500 rounded-full opacity-40 group-hover/image:animate-pulse"
+                style="animation-delay: 0.3s"
+              ></div>
+            </div>
+
+            <!-- Bottom left accent with gradient -->
+            <div
+              class="absolute bottom-4 left-4 w-8 h-1 bg-gradient-to-r from-purple-400 to-violet-400 rounded-full opacity-50 group-hover/image:opacity-80 transition-opacity duration-300"
+            ></div>
+
+            <!-- Animated border shimmer effect on hover -->
+            <div
+              class="absolute inset-0 rounded-2xl opacity-0 group-hover/image:opacity-100 transition-opacity duration-500"
+            >
+              <div
+                class="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-purple-200/30 to-transparent animate-shimmer"
+              ></div>
+            </div>
+          </div>
+
+          <div class="relative p-6 space-y-4 flex-grow flex flex-col">
+            <!-- Badge and Timeline with enhanced styling -->
+            <div class="flex items-center justify-between">
+              <span
+                class="px-3 py-1.5 bg-gradient-to-r from-pink-500 to-pink-600 text-white text-xs font-semibold rounded-full shadow-sm"
+              >
+                Training
+              </span>
+              <div
+                class="flex items-center text-xs text-gray-500 bg-gray-50 px-3 py-1 rounded-full"
+              >
+                <svg
+                  class="w-3 h-3 mr-1.5 text-gray-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  ></path>
+                </svg>
+                <span class="font-medium">Dec 2024 - Mar 2025</span>
+              </div>
+            </div>
+
+            <!-- Role Title with gradient text -->
+            <h3
+              class="font-Ovo text-xl font-bold text-gray-900 leading-tight group-hover:text-purple-700 transition-colors duration-300"
+            >
+              AWS Cloud Practitioner
+            </h3>
+
+            <!-- Enhanced Company Info -->
+            <div
+              class="bg-gradient-to-r from-gray-50 to-gray-100/50 rounded-xl p-4 border border-gray-100"
+            >
+              <div class="space-y-2">
+                <div class="flex items-center">
+                  <div class="p-1.5 bg-purple-100 rounded-lg mr-3">
+                    <svg
+                      class="w-3.5 h-3.5 text-purple-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-6m-2 0H5m0 0H3m2 0v-3a2 2 0 012-2h6a2 2 0 012 2v3"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="text-sm font-bold text-gray-800">
+                    Tata Strive
+                  </span>
+                </div>
+                <div class="flex items-center">
+                  <div class="p-1.5 bg-green-100 rounded-lg mr-3">
+                    <svg
+                      class="w-3.5 h-3.5 text-green-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      ></path>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="text-sm text-gray-600 font-medium">
+                    Dashrathpuri, Delhi, India
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Enhanced Description with flex-grow to take available space -->
+            <div class="flex-grow">
+              <p class="text-gray-600 text-sm leading-relaxed font-medium mb-4">
+                Comprehensive cloud computing training covering AWS services,
+                architecture best practices, and cloud deployment strategies for
+                scalable applications with hands-on experience.
+              </p>
+
+              <!-- Skills Tags -->
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-2 py-1 bg-purple-100 text-purple-700 text-xs font-medium rounded-md"
+                  >AWS EC2</span
+                >
+                <span
+                  class="px-2 py-1 bg-pink-100 text-pink-700 text-xs font-medium rounded-md"
+                  >Cloud Fundamentals</span
+                >
+                <span
+                  class="px-2 py-1 bg-indigo-100 text-indigo-700 text-xs font-medium rounded-md"
+                  >S3</span
+                >
+                <span
+                  class="px-2 py-1 bg-yellow-100 text-yellow-700 text-xs font-medium rounded-md"
+                  >IAM</span
+                >
+                <span
+                  class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-md"
+                  >Cloud Security</span
+                >
+
+                <span
+                  class="px-2 py-1 bg-purple-100 text-purple-700 text-xs font-medium rounded-md"
+                  >Cloud Networking</span
+                >
+                <span
+                  class="px-2 py-1 bg-pink-100 text-pink-700 text-xs font-medium rounded-md"
+                  >Pricing</span
+                >
+              </div>
+            </div>
+
+            <!-- Enhanced Action Button - Fixed at bottom -->
+            <div class="mt-auto pt-4">
+              <a
+                href="https://www.credly.com/badges/be66bf69-1877-4ab3-88e9-aa85f0dd88e7/linked_in_profile"
+                target="_blank"
+                class="group/btn inline-flex items-center justify-center w-full px-6 py-3 bg-gradient-to-r from-purple-600 via-pink-600 to-purple-700 text-white text-sm font-semibold rounded-xl hover:from-purple-700 hover:via-pink-700 hover:to-purple-800 transition-all duration-300 focus:outline-none shadow-lg hover:shadow-xl"
+              >
+                <span>View Details</span>
+                <svg
+                  class="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Decorative elements -->
+          <div
+            class="absolute top-0 left-0 w-20 h-20 bg-gradient-to-br from-purple-500/10 to-transparent rounded-br-full"
+          ></div>
+          <div
+            class="absolute bottom-0 right-0 w-16 h-16 bg-gradient-to-tl from-pink-500/10 to-transparent rounded-tl-full"
+          ></div>
         </div>
+
+        <!-- CETPA Infotech Card -->
         <div
-          class="aspect-square bg-[url('./images/oasis_infobyte_logo.jpg')] bg-no-repeat bg-cover bg-center rounded-lg border border-gray-400 relative group"
+          class="experience-card group relative bg-white/80 backdrop-blur-sm border border-gray-200/50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden h-full flex flex-col"
         >
-          <a
-            href="https://www.linkedin.com/posts/rajivsharma25_rajiv-sharma-activity-7055429670510469120-Fgd6?utm_source=share&utm_medium=member_desktop&rcm=ACoAACrYqosBhOvH7AuqcV69McfqCm4_TJHfxy0"
-            target="_blank"
+          <!-- Decorative gradient overlay -->
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-green-500/5 to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          ></div>
+
+          <!-- Company Image with enhanced styling -->
+          <div
+            class="relative h-48 bg-gradient-to-br from-gray-50 via-white to-gray-100 flex items-center justify-center overflow-hidden flex-shrink-0 group/image"
           >
+            <!-- Multi-layered background gradients -->
             <div
-              class="h-20 bg-white w-10/12 rounded-md border-2 border-gray-200 absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between cursor-pointer duration-500 group-hover:bottom-7 hover:-translate-y-1 hover:bg-green-200 hover:shadow-black"
-            >
-              <div>
-                <h2 class="font-semibold font-Ovo">Internship</h2>
-                <p class="text-sm text-gray-700">Web Developer Intern</p>
-              </div>
-              <img src="./images/send-icon.png" class="w-5" alt="" />
+              class="absolute inset-0 bg-gradient-to-br from-transparent via-green-50/30 to-emerald-50/20"
+            ></div>
+            <div
+              class="absolute inset-0 bg-gradient-to-tl from-transparent to-green-100/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+            ></div>
+
+            <!-- Animated background pattern -->
+            <div class="absolute inset-0 opacity-30">
+              <div
+                class="absolute top-4 left-4 w-2 h-2 bg-green-300 rounded-full animate-pulse"
+              ></div>
+              <div
+                class="absolute top-8 right-8 w-1.5 h-1.5 bg-emerald-300 rounded-full animate-pulse"
+                style="animation-delay: 0.5s"
+              ></div>
+              <div
+                class="absolute bottom-6 left-8 w-1 h-1 bg-green-400 rounded-full animate-pulse"
+                style="animation-delay: 1s"
+              ></div>
             </div>
-          </a>
+
+            <!-- Main image container with enhanced effects -->
+            <div
+              class="w-full h-full flex items-center justify-center relative z-10"
+            >
+              <!-- Image glow effect -->
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-green-200/20 via-emerald-200/20 to-green-200/20 rounded-full blur-xl scale-110 opacity-0 group-hover/image:opacity-100 transition-all duration-500"
+              ></div>
+
+              <!-- Image with enhanced styling -->
+              <img
+                src="./images/cetpainfotech_logo.jpg"
+                alt="CETPA Infotech Logo"
+                class="relative w-36 h-36 z-20 object-contain rounded-full shadow-lg group-hover/image:shadow-2xl group-hover/image:scale-105 transition-all duration-500 ring-2 ring-white/50 group-hover/image:ring-green-200/50"
+              />
+
+              <!-- Floating elements around image -->
+              <div
+                class="absolute top-1/2 left-1/4 w-1 h-1 bg-green-400 rounded-full opacity-60 group-hover/image:animate-bounce"
+                style="animation-delay: 0.2s"
+              ></div>
+              <div
+                class="absolute top-1/3 right-1/4 w-1.5 h-1.5 bg-emerald-400 rounded-full opacity-60 group-hover/image:animate-bounce"
+                style="animation-delay: 0.8s"
+              ></div>
+            </div>
+
+            <!-- Enhanced corner accents -->
+            <div class="absolute top-4 right-4 flex space-x-1">
+              <div
+                class="w-2 h-2 bg-green-500 rounded-full opacity-60 group-hover/image:animate-pulse"
+              ></div>
+              <div
+                class="w-1.5 h-1.5 bg-emerald-500 rounded-full opacity-40 group-hover/image:animate-pulse"
+                style="animation-delay: 0.3s"
+              ></div>
+            </div>
+
+            <!-- Bottom left accent with gradient -->
+            <div
+              class="absolute bottom-4 left-4 w-8 h-1 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full opacity-50 group-hover/image:opacity-80 transition-opacity duration-300"
+            ></div>
+
+            <!-- Animated border shimmer effect on hover -->
+            <div
+              class="absolute inset-0 rounded-2xl opacity-0 group-hover/image:opacity-100 transition-opacity duration-500"
+            >
+              <div
+                class="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-green-200/30 to-transparent animate-shimmer"
+              ></div>
+            </div>
+          </div>
+
+          <div class="relative p-6 space-y-4 flex-grow flex flex-col">
+            <!-- Badge and Timeline with enhanced styling -->
+            <div class="flex items-center justify-between">
+              <span
+                class="px-3 py-1.5 bg-gradient-to-r from-green-500 to-green-600 text-white text-xs font-semibold rounded-full shadow-sm"
+              >
+                Internship
+              </span>
+              <div
+                class="flex items-center text-xs text-gray-500 bg-gray-50 px-3 py-1 rounded-full"
+              >
+                <svg
+                  class="w-3 h-3 mr-1.5 text-gray-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  ></path>
+                </svg>
+                <span class="font-medium">Jul 2023 - Sep 2023</span>
+              </div>
+            </div>
+
+            <!-- Role Title with gradient text -->
+            <h3
+              class="font-Ovo text-xl font-bold text-gray-900 leading-tight group-hover:text-green-700 transition-colors duration-300"
+            >
+              Web Development Intern
+            </h3>
+
+            <!-- Enhanced Company Info -->
+            <div
+              class="bg-gradient-to-r from-gray-50 to-gray-100/50 rounded-xl p-4 border border-gray-100"
+            >
+              <div class="space-y-2">
+                <div class="flex items-center">
+                  <div class="p-1.5 bg-green-100 rounded-lg mr-3">
+                    <svg
+                      class="w-3.5 h-3.5 text-green-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-6m-2 0H5m0 0H3m2 0v-3a2 2 0 012-2h6a2 2 0 012 2v3"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="text-sm font-bold text-gray-800">
+                    CETPA Infotech
+                  </span>
+                </div>
+                <div class="flex items-center">
+                  <div class="p-1.5 bg-green-100 rounded-lg mr-3">
+                    <svg
+                      class="w-3.5 h-3.5 text-green-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      ></path>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="text-sm text-gray-600 font-medium">
+                    Noida, Uttar Pradesh, India
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Enhanced Description with flex-grow to take available space -->
+            <div class="flex-grow">
+              <p class="text-gray-600 text-sm leading-relaxed font-medium mb-4">
+                Full-stack development experience with MERN stack, database
+                design, API integration, and agile development methodologies for
+                scalable web applications.
+              </p>
+
+              <!-- Skills Tags -->
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-md"
+                  >MERN Stack</span
+                >
+                <span
+                  class="px-2 py-1 bg-violet-100 text-violet-700 text-xs font-medium rounded-md"
+                  >ReactJS</span
+                >
+                <span
+                  class="px-2 py-1 bg-teal-100 text-teal-700 text-xs font-medium rounded-md"
+                  >APIs</span
+                >
+                <span
+                  class="px-2 py-1 bg-yellow-100 text-yellow-700 text-xs font-medium rounded-md"
+                  >HTML</span
+                >
+                <span
+                  class="px-2 py-1 bg-purple-100 text-purple-700 text-xs font-medium rounded-md"
+                  >CSS</span
+                >
+                <span
+                  class="px-2 py-1 bg-pink-100 text-pink-700 text-xs font-medium rounded-md"
+                  >JavaScript</span
+                >
+                <span
+                  class="px-2 py-1 bg-indigo-100 text-indigo-700 text-xs font-medium rounded-md"
+                  >Redux</span
+                >
+              </div>
+            </div>
+
+            <!-- Enhanced Action Button - Fixed at bottom -->
+            <div class="mt-auto pt-4">
+              <a
+                href="https://www.linkedin.com/posts/rajivsharma25_mernstack-internshipcomplete-fullstackdeveloper-activity-7121792727544950785-y6Mf?utm_source=share&utm_medium=member_desktop&rcm=ACoAACrYqosBhOvH7AuqcV69McfqCm4_TJHfxy0"
+                target="_blank"
+                class="group/btn inline-flex items-center justify-center w-full px-6 py-3 bg-gradient-to-r from-green-600 via-emerald-600 to-green-700 text-white text-sm font-semibold rounded-xl hover:from-green-700 hover:via-emerald-700 hover:to-green-800 transition-all duration-300 focus:outline-none shadow-lg hover:shadow-xl"
+              >
+                <span>View Details</span>
+                <svg
+                  class="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Decorative elements -->
+          <div
+            class="absolute top-0 left-0 w-20 h-20 bg-gradient-to-br from-green-500/10 to-transparent rounded-br-full"
+          ></div>
+          <div
+            class="absolute bottom-0 right-0 w-16 h-16 bg-gradient-to-tl from-emerald-500/10 to-transparent rounded-tl-full"
+          ></div>
+        </div>
+
+        <!-- Oasis Infobyte Card -->
+        <div
+          class="experience-card group relative bg-white/80 backdrop-blur-sm border border-gray-200/50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden h-full flex flex-col"
+        >
+          <!-- Decorative gradient overlay -->
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-red-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          ></div>
+
+          <!-- Company Image with enhanced styling -->
+          <div
+            class="relative h-48 bg-gradient-to-br from-gray-50 via-white to-gray-100 flex items-center justify-center overflow-hidden flex-shrink-0 group/image"
+          >
+            <!-- Multi-layered background gradients -->
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-transparent via-orange-50/30 to-amber-50/20"
+            ></div>
+            <div
+              class="absolute inset-0 bg-gradient-to-tl from-transparent to-orange-100/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+            ></div>
+
+            <!-- Animated background pattern -->
+            <div class="absolute inset-0 opacity-30">
+              <div
+                class="absolute top-4 left-4 w-2 h-2 bg-orange-300 rounded-full animate-pulse"
+              ></div>
+              <div
+                class="absolute top-8 right-8 w-1.5 h-1.5 bg-amber-300 rounded-full animate-pulse"
+                style="animation-delay: 0.5s"
+              ></div>
+              <div
+                class="absolute bottom-6 left-8 w-1 h-1 bg-orange-400 rounded-full animate-pulse"
+                style="animation-delay: 1s"
+              ></div>
+            </div>
+
+            <!-- Main image container with enhanced effects -->
+            <div
+              class="w-full h-full flex items-center justify-center relative z-10"
+            >
+              <!-- Image glow effect -->
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-orange-200/20 via-amber-200/20 to-orange-200/20 rounded-full blur-xl scale-110 opacity-0 group-hover/image:opacity-100 transition-all duration-500"
+              ></div>
+
+              <!-- Image with enhanced styling -->
+              <img
+                src="./images/oasis_infobyte_logo.jpg"
+                alt="Oasis Infobyte Logo"
+                class="relative w-36 h-36 z-20 object-contain rounded-full shadow-lg group-hover/image:shadow-2xl group-hover/image:scale-105 transition-all duration-500 ring-2 ring-white/50 group-hover/image:ring-orange-200/50"
+              />
+
+              <!-- Floating elements around image -->
+              <div
+                class="absolute top-1/2 left-1/4 w-1 h-1 bg-orange-400 rounded-full opacity-60 group-hover/image:animate-bounce"
+                style="animation-delay: 0.2s"
+              ></div>
+              <div
+                class="absolute top-1/3 right-1/4 w-1.5 h-1.5 bg-amber-400 rounded-full opacity-60 group-hover/image:animate-bounce"
+                style="animation-delay: 0.8s"
+              ></div>
+            </div>
+
+            <!-- Enhanced corner accents -->
+            <div class="absolute top-4 right-4 flex space-x-1">
+              <div
+                class="w-2 h-2 bg-orange-500 rounded-full opacity-60 group-hover/image:animate-pulse"
+              ></div>
+              <div
+                class="w-1.5 h-1.5 bg-amber-500 rounded-full opacity-40 group-hover/image:animate-pulse"
+                style="animation-delay: 0.3s"
+              ></div>
+            </div>
+
+            <!-- Bottom left accent with gradient -->
+            <div
+              class="absolute bottom-4 left-4 w-8 h-1 bg-gradient-to-r from-orange-400 to-amber-400 rounded-full opacity-50 group-hover/image:opacity-80 transition-opacity duration-300"
+            ></div>
+
+            <!-- Animated border shimmer effect on hover -->
+            <div
+              class="absolute inset-0 rounded-2xl opacity-0 group-hover/image:opacity-100 transition-opacity duration-500"
+            >
+              <div
+                class="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-orange-200/30 to-transparent animate-shimmer"
+              ></div>
+            </div>
+          </div>
+
+          <div class="relative p-6 space-y-4 flex-grow flex flex-col">
+            <!-- Badge and Timeline with enhanced styling -->
+            <div class="flex items-center justify-between">
+              <span
+                class="px-3 py-1.5 bg-gradient-to-r from-orange-500 to-orange-600 text-white text-xs font-semibold rounded-full shadow-sm"
+              >
+                Internship
+              </span>
+              <div
+                class="flex items-center text-xs text-gray-500 bg-gray-50 px-3 py-1 rounded-full"
+              >
+                <svg
+                  class="w-3 h-3 mr-1.5 text-gray-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  ></path>
+                </svg>
+                <span class="font-medium">Mar 2023 - Apr 2023</span>
+              </div>
+            </div>
+
+            <!-- Role Title with gradient text -->
+            <h3
+              class="font-Ovo text-xl font-bold text-gray-900 leading-tight group-hover:text-orange-700 transition-colors duration-300"
+            >
+              Web Development & Designing
+            </h3>
+
+            <!-- Enhanced Company Info -->
+            <div
+              class="bg-gradient-to-r from-gray-50 to-gray-100/50 rounded-xl p-4 border border-gray-100"
+            >
+              <div class="space-y-2">
+                <div class="flex items-center">
+                  <div class="p-1.5 bg-orange-100 rounded-lg mr-3">
+                    <svg
+                      class="w-3.5 h-3.5 text-orange-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-6m-2 0H5m0 0H3m2 0v-3a2 2 0 012-2h6a2 2 0 012 2v3"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="text-sm font-bold text-gray-800">
+                    Oasis Infobyte
+                  </span>
+                </div>
+                <div class="flex items-center">
+                  <div class="p-1.5 bg-green-100 rounded-lg mr-3">
+                    <svg
+                      class="w-3.5 h-3.5 text-green-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      ></path>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="text-sm text-gray-600 font-medium">
+                    Remote, India
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Enhanced Description with flex-grow to take available space -->
+            <div class="flex-grow">
+              <p class="text-gray-600 text-sm leading-relaxed font-medium mb-4">
+                Frontend development focused on creating interactive user
+                interfaces, implementing responsive designs, and optimizing web
+                performance with modern development practices.
+              </p>
+
+              <!-- Skills Tags -->
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-2 py-1 bg-orange-100 text-orange-700 text-xs font-medium rounded-md"
+                  >HTML</span
+                >
+                <span
+                  class="px-2 py-1 bg-red-100 text-red-700 text-xs font-medium rounded-md"
+                  >CSS</span
+                >
+                <span
+                  class="px-2 py-1 bg-yellow-100 text-yellow-700 text-xs font-medium rounded-md"
+                  >JavaScript</span
+                >
+                <span
+                  class="px-2 py-1 bg-green-100 text-green-700 text-xs font-medium rounded-md"
+                  >Tailwind CSS</span
+                >
+                <span
+                  class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-md"
+                  >Responsive Design</span
+                >
+              </div>
+            </div>
+
+            <!-- Enhanced Action Button - Fixed at bottom -->
+            <div class="mt-auto pt-4">
+              <a
+                href="https://www.linkedin.com/posts/rajivsharma25_rajiv-sharma-activity-7055429670510469120-Fgd6?utm_source=share&utm_medium=member_desktop&rcm=ACoAACrYqosBhOvH7AuqcV69McfqCm4_TJHfxy0"
+                target="_blank"
+                class="group/btn inline-flex items-center justify-center w-full px-6 py-3 bg-gradient-to-r from-orange-600 via-red-600 to-orange-700 text-white text-sm font-semibold rounded-xl hover:from-orange-700 hover:via-red-700 hover:to-orange-800 transition-all duration-300 focus:outline-none shadow-lg hover:shadow-xl"
+              >
+                <span>View Details</span>
+                <svg
+                  class="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Decorative elements -->
+          <div
+            class="absolute top-0 left-0 w-20 h-20 bg-gradient-to-br from-orange-500/10 to-transparent rounded-br-full"
+          ></div>
+          <div
+            class="absolute bottom-0 right-0 w-16 h-16 bg-gradient-to-tl from-red-500/10 to-transparent rounded-tl-full"
+          ></div>
         </div>
       </div>
-    </div>
+
+      <!-- Enhanced Call to Action -->
+      <div class="text-center mt-10">
+        <div class="inline-flex flex-col items-center space-y-4">
+          <a
+            href="https://www.linkedin.com/in/rajivsharma25/"
+            target="_blank"
+            class="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white font-semibold rounded-full hover:from-gray-800 hover:via-gray-700 hover:to-gray-800 transition-all duration-300 focus:outline-none focus:ring-gray-400 focus:ring-offset-2 shadow-lg hover:shadow-xl"
+          >
+            <span>View Complete Profile</span>
+            <svg
+              class="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"
+              ></path>
+            </svg>
+          </a>
+          <p class="text-sm text-gray-500">
+            Connect with me on LinkedIn for more details
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- my projects -->
-    <div id="project" class="w-full px-[12%] py-10 scroll-mt-20">
+    <div id="project" class="w-full px-[6%] sm:px-[12%] py-10 scroll-mt-20">
       <h4 class="text-center mb-2 text-lg">My Portfolio</h4>
       <h2 class="text-center text-5xl font-Ovo">My Latest Projects</h2>
       <p class="md:text-center text-justify max-w-2xl mx-auto mt-5 mb-12">
@@ -390,80 +1715,481 @@
         projects showcasing my expertise in front-end development.
       </p>
 
-      <div class="grid grid-cols-auto my-10 gap-5">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 my-10 gap-8">
+        <!-- Prescripto Card -->
         <div
-          class="aspect-square bg-[url('./images/doc-app.png')] bg-no-repeat bg-cover bg-center rounded-lg border border-gray-400 relative cursor-pointer group"
+          class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col"
         >
-          <a
-            href="https://prescripto-online-doctor-appointment-pl-rajivsharma25s-projects.vercel.app/"
-            target="_blank"
-          >
+          <!-- Image Container -->
+          <div class="relative h-64 overflow-hidden">
+            <img
+              src="./images/doc-app.png"
+              alt="Prescripto Project"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            />
+            <!-- Gradient Overlay -->
             <div
-              class="h-20 bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7 hover:-translate-y-1 hover:bg-green-200 hover:shadow-black"
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            ></div>
+
+            <!-- Status Badge -->
+            <div
+              class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
             >
+              <div
+                class="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full"
+              >
+                <div
+                  class="w-2 h-2 bg-green-500 rounded-full animate-pulse"
+                ></div>
+                <span class="text-xs font-medium text-gray-700">Live</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Container -->
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="flex items-start justify-between mb-3">
               <div>
-                <h2 class="font-semibold font-Ovo">Prescripto</h2>
-                <p class="text-sm text-gray-700">
-                  Doctor Appointments Platform
+                <h3 class="text-xl font-bold font-Ovo text-gray-900 mb-2">
+                  Prescripto
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  A comprehensive doctor appointment booking platform with
+                  real-time scheduling and patient management.
                 </p>
               </div>
-              <img src="./images/send-icon.png" class="w-5" alt="" />
             </div>
-          </a>
-        </div>
-        <div
-          class="aspect-square bg-[url('./images/cravecart.png')] bg-no-repeat bg-cover bg-center rounded-lg border border-gray-400 relative cursor-pointer group"
-        >
-          <a
-            href="https://cravecart-food-delivery-website-rajivsharma25s-projects.vercel.app/"
-            target="_blank"
-          >
-            <div
-              class="h-20 bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7 hover:-translate-y-1 hover:bg-green-200 hover:shadow-black"
-            >
-              <div>
-                <h2 class="font-semibold font-Ovo">CraveCart</h2>
-                <p class="text-sm text-gray-700">Food Delivery Application</p>
+
+            <!-- tech used -->
+            <div class="mb-4">
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="text-xs px-3 py-1.5 rounded-md font-medium bg-violet-100 text-violet-900"
+                  >ReactJS</span
+                >
+                <span
+                  class="text-xs px-3 py-1.5 rounded-md font-medium bg-pink-100 text-pink-800"
+                  >Tailwind CSS</span
+                >
+                <span
+                  class="text-xs px-3 py-1.5 rounded-md font-medium bg-blue-100 text-blue-700"
+                  >JavaScript</span
+                >
+                <span
+                  class="text-xs px-3 py-1.5 rounded-md font-medium bg-yellow-100 text-yellow-700"
+                  >Redux</span
+                >
               </div>
-              <img src="./images/send-icon.png" class="w-5" alt="" />
             </div>
-          </a>
+
+            <!-- Action Buttons - Fixed at bottom -->
+            <div class="flex flex-col gap-3 mt-auto">
+              <a
+                href="https://prescripto-online-doctor-appointment-pl-rajivsharma25s-projects.vercel.app/"
+                target="_blank"
+                class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-2 group/btn"
+              >
+                <span>View Live</span>
+                <svg
+                  class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://github.com/rajivsharma25/Prescripto-Online-Doctor-Appointment-Platform"
+                target="_blank"
+                class="px-4 py-2 border border-gray-300 hover:border-gray-400 text-gray-700 rounded-lg font-medium transition-colors duration-300 flex justify-center items-center gap-2"
+              >
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                  />
+                </svg>
+                Code
+              </a>
+            </div>
+          </div>
+
+          <!-- Bottom Accent -->
+          <div
+            class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
+          ></div>
         </div>
+
+        <!-- CraveCart Card -->
         <div
-          class="aspect-square bg-[url('./images/forever.png')] bg-no-repeat bg-cover bg-center rounded-lg border border-gray-400 relative cursor-pointer group"
+          class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col"
         >
-          <a
-            href="https://forever-ecommerce-website-rajiv-sharma.vercel.app/"
-            target="_blank"
-          >
+          <!-- Image Container -->
+          <div class="relative h-64 overflow-hidden">
+            <img
+              src="./images/cravecart.png"
+              alt="CraveCart Project"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            />
+            <!-- Gradient Overlay -->
             <div
-              class="h-20 bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7 hover:-translate-y-1 hover:bg-green-200 hover:shadow-black"
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            ></div>
+
+            <!-- Status Badge -->
+            <div
+              class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
             >
-              <div>
-                <h2 class="font-semibold font-Ovo">Forever</h2>
-                <p class="text-sm text-gray-700">Online Shopping Website</p>
+              <div
+                class="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full"
+              >
+                <div
+                  class="w-2 h-2 bg-green-500 rounded-full animate-pulse"
+                ></div>
+                <span class="text-xs font-medium text-gray-700">Live</span>
               </div>
-              <img src="./images/send-icon.png" class="w-5" alt="" />
             </div>
-          </a>
+          </div>
+
+          <!-- Content Container -->
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-xl font-bold font-Ovo text-gray-900 mb-2">
+                  CraveCart
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  A full-stack food delivery application with cart management,
+                  order tracking, and payment integration.
+                </p>
+              </div>
+            </div>
+
+            <!-- tech used -->
+            <div class="mb-4">
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="text-xs px-3 py-1.5 rounded-md font-medium bg-violet-100 text-violet-900"
+                  >ReactJS</span
+                >
+                <span
+                  class="text-xs px-3 py-1.5 rounded-md font-medium bg-pink-100 text-pink-800"
+                  >Tailwind CSS</span
+                >
+                <span
+                  class="text-xs px-3 py-1.5 rounded-md font-medium bg-blue-100 text-blue-700"
+                  >JavaScript</span
+                >
+                <span
+                  class="text-xs px-3 py-1.5 rounded-md font-medium bg-yellow-100 text-yellow-700"
+                  >Context API</span
+                >
+              </div>
+            </div>
+
+            <!-- Action Buttons - Fixed at bottom -->
+            <div class="flex flex-col gap-3 mt-auto">
+              <a
+                href="https://cravecart-food-delivery-website-rajivsharma25s-projects.vercel.app/"
+                target="_blank"
+                class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-2 group/btn"
+              >
+                <span>View Live</span>
+                <svg
+                  class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://github.com/rajivsharma25/CraveCart-Food-Delivery-Website"
+                target="_blank"
+                class="px-4 py-2 border border-gray-300 hover:border-gray-400 text-gray-700 rounded-lg font-medium transition-colors duration-300 flex justify-center items-center gap-2"
+              >
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                  />
+                </svg>
+                Code
+              </a>
+            </div>
+          </div>
+
+          <!-- Bottom Accent -->
+          <div
+            class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-500 to-red-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
+          ></div>
         </div>
+
+        <!-- Forever Card -->
         <div
-          class="aspect-square bg-[url('./images/plan.png')] bg-no-repeat bg-cover bg-center rounded-lg border border-gray-400 relative group"
+          class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col"
         >
-          <a
-            href="https://rajivsharma25.github.io/plan-with-rajiv/"
-            target="_blank"
-          >
+          <!-- Image Container -->
+          <div class="relative h-64 overflow-hidden">
+            <img
+              src="./images/forever.png"
+              alt="Forever Project"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            />
+            <!-- Gradient Overlay -->
             <div
-              class="h-20 bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between cursor-pointer duration-500 group-hover:bottom-7 hover:-translate-y-1 hover:bg-green-200 hover:shadow-black"
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            ></div>
+
+            <!-- Status Badge -->
+            <div
+              class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
             >
-              <div>
-                <h2 class="font-semibold font-Ovo">Plan With Rajiv</h2>
-                <p class="text-sm text-gray-700">A Travel Planning Website</p>
+              <div
+                class="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full"
+              >
+                <div
+                  class="w-2 h-2 bg-green-500 rounded-full animate-pulse"
+                ></div>
+                <span class="text-xs font-medium text-gray-700">Live</span>
               </div>
-              <img src="./images/send-icon.png" class="w-5" alt="" />
             </div>
-          </a>
+          </div>
+
+          <!-- Content Container -->
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-xl font-bold font-Ovo text-gray-900 mb-2">
+                  Forever
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  A modern e-commerce platform with product catalog, shopping
+                  cart, and secure checkout functionality.
+                </p>
+              </div>
+            </div>
+
+            <!-- tech used -->
+            <div class="mb-4">
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="text-xs px-3 py-1.5 rounded-md font-medium bg-violet-100 text-violet-900"
+                  >ReactJS</span
+                >
+                <span
+                  class="text-xs px-3 py-1.5 rounded-md font-medium bg-pink-100 text-pink-800"
+                  >Context API</span
+                >
+                <span
+                  class="text-xs px-3 py-1.5 rounded-md font-medium bg-blue-100 text-blue-700"
+                  >JavaScript</span
+                >
+                <span
+                  class="text-xs px-3 py-1.5 rounded-md font-medium bg-yellow-100 text-yellow-700"
+                  >Tailwind CSS</span
+                >
+              </div>
+            </div>
+
+            <!-- Action Buttons - Fixed at bottom -->
+            <div class="flex flex-col gap-3 mt-auto">
+              <a
+                href="https://forever-ecommerce-website-rajiv-sharma.vercel.app/"
+                target="_blank"
+                class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-2 group/btn"
+              >
+                <span>View Live</span>
+                <svg
+                  class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://github.com/rajivsharma25/Forever-Ecommerce-Website"
+                target="_blank"
+                class="px-4 py-2 border border-gray-300 hover:border-gray-400 text-gray-700 rounded-lg font-medium transition-colors duration-300 flex justify-center items-center gap-2"
+              >
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                  />
+                </svg>
+                Code
+              </a>
+            </div>
+          </div>
+
+          <!-- Bottom Accent -->
+          <div
+            class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 to-violet-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
+          ></div>
+        </div>
+
+        <!-- Plan With Rajiv Card -->
+        <div
+          class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col"
+        >
+          <!-- Image Container -->
+          <div class="relative h-64 overflow-hidden">
+            <img
+              src="./images/plan.png"
+              alt="Plan With Rajiv Project"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            />
+            <!-- Gradient Overlay -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            ></div>
+
+            <!-- Status Badge -->
+            <div
+              class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+              <div
+                class="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full"
+              >
+                <div
+                  class="w-2 h-2 bg-green-500 rounded-full animate-pulse"
+                ></div>
+                <span class="text-xs font-medium text-gray-700">Live</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Container -->
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-xl font-bold font-Ovo text-gray-900 mb-2">
+                  Plan With Rajiv
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  An interactive travel planning website with destination
+                  guides, itinerary builder, and travel tips.
+                </p>
+              </div>
+            </div>
+
+            <!-- tech used -->
+            <div class="mb-4">
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="text-xs px-3 py-1.5 rounded-md font-medium bg-violet-100 text-violet-900"
+                  >HTML5</span
+                >
+                <span
+                  class="text-xs px-3 py-1.5 rounded-md font-medium bg-pink-100 text-pink-800"
+                  >CSS3</span
+                >
+                <span
+                  class="text-xs px-3 py-1.5 rounded-md font-medium bg-blue-100 text-blue-700"
+                  >JavaScript</span
+                >
+                <span
+                  class="text-xs px-3 py-1.5 rounded-md font-medium bg-yellow-100 text-yellow-700"
+                  >Responsive</span
+                >
+                <span
+                  class="text-xs px-3 py-1.5 rounded-md font-medium bg-green-100 text-green-700"
+                  >Tailwind CSS</span
+                >
+              </div>
+            </div>
+
+            <!-- Action Buttons - Fixed at bottom -->
+            <div class="flex flex-col gap-3 mt-auto">
+              <a
+                href="https://rajivsharma25.github.io/plan-with-rajiv/"
+                target="_blank"
+                class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-300 flex items-center justify-center gap-2 group/btn"
+              >
+                <span>View Live</span>
+                <svg
+                  class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://github.com/rajivsharma25/plan-with-rajiv"
+                target="_blank"
+                class="px-4 py-2 border border-gray-300 hover:border-gray-400 text-gray-700 rounded-lg font-medium transition-colors duration-300 flex justify-center items-center gap-2"
+              >
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                  />
+                </svg>
+                Code
+              </a>
+            </div>
+          </div>
+
+          <!-- Bottom Accent -->
+          <div
+            class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-green-500 to-emerald-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
+          ></div>
         </div>
       </div>
     </div>
@@ -471,7 +2197,7 @@
     <!-- contact -->
     <div
       id="contact"
-      class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center"
+      class="w-full px-[6%] sm:px-[12%] py-10 scroll-mt-20 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center"
     >
       <h4 class="text-center mb-2 text-lg">Connect with me</h4>
       <h2 class="text-center text-5xl font-Ovo">Get in touch</h2>
